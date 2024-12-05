@@ -1,1 +1,68 @@
 
+def add(n1, n2):
+     return n1 + n2
+
+def substract(n1, n2):
+     return n1 - n2
+
+def divide(n1,n2):
+    return n1 / n2
+
+def multiply(n1,n2):
+    return n1 * n2
+
+operations = {"*": multiply,
+               "/": divide,
+               "+": add,
+               "-": substract,}
+
+
+def one():
+    n1 = int(input("What's the first number?"))  # ask for first number
+    action = str(input("Pick an operator, -,*,/,+"))  # ask for the operator
+    n2 = int(input("What's the next number?"))  # ask for the next number
+
+    if action == "*":
+        N3 = (operations["*"](n1, n2))
+        print(N3)
+        N3 = one()
+    elif action == "/":
+        N3 = (operations["/"](n1, n2))
+        print(N3)
+        N3 = one()
+    elif action == "+":
+        N3 = (operations["+"](n1, n2))
+        print(N3)
+        N3 = one()
+    elif action == "-":
+        N3 = (operations["-"](n1, n2))
+        print(N3)
+        N3 = one()
+    else:
+        N3 = (operations["/"](n1, n2))
+        print(N3)
+        N3 = one()
+
+
+
+
+def two(one):
+
+    if actie == "*":
+        print(N3 * n4)
+    elif actie == "/":
+        print(N3 / n4)
+    elif actie == "+":
+        print(N3 + n4)
+    elif actie == "-":
+        print(N3 - n4)
+
+while True:
+    one()
+    actie = str(input("Pick an operator, -,*,/,+"))  # ask for the operator
+    n4 = int(input("What's the next number?"))  # ask for the next number
+    two(one)
+    one()
+
+
+
