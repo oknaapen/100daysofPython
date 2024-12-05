@@ -1,1 +1,21 @@
 
+while True:
+    if beurt < 7:
+        while True:
+          try:
+              raad = int(input(""))
+              break
+          except ValueError:
+              print("typ een geldig getal")
+        if raad < getal:
+            print("het getal is te laag")
+        elif raad > getal:
+            print("het getal is hoog")
+        elif raad == getal:
+            print("Je hebt het getal geraden")
+            break
+        beurt += 1
+    # Beurten zijn verstreken
+    elif beurt == 7:
+        print("Game over")
+        break
