@@ -1,0 +1,69 @@
+
+
+
+import random as rd
+from art import logo
+
+#functie controleren
+def controle():
+    if sum(hand_speler) > 21 and sum(hand_computer) > 21:
+        print(f"Your score is {sum(hand_speler)} and computer {sum(hand_computer)}, It's a draw")
+    if sum(hand_speler) == sum(hand_computer):
+        print(f"Your score and computer score = {sum(hand_speler)}")
+        print("It's a draw")
+    elif sum(hand_speler) < sum(hand_computer) and sum(hand_computer) < 21:
+        print(f"Your score is {sum(hand_speler)}, computer score {sum(hand_computer)}")
+        print("you loose")
+    elif sum(hand_speler) > sum(hand_computer) and sum(hand_speler) <= 21:
+        print(f"Your score is {sum(hand_speler)}, computer score {sum(hand_computer)}")
+        print("you WIN")
+    if sum(hand_speler) > 21 and sum(hand_computer) <= 21:
+        print(f"Your score is {sum(hand_speler)}, computer score {sum(hand_computer)}")
+        print("you LOSE")
+
+#computer's hand
+def computer():
+    if sum(hand_computer) <= 14:
+        hand_computer.append(rd.choice(card))
+        if sum(hand_computer) == 17:
+            keuze = rd.randint(1, 2)
+            print(keuze)
+            if keuze == 1:
+                hand_computer.append(rd.choice(card))
+            elif keuze == 2:
+                return(sum(hand_computer))
+    else:
+        return sum(hand_computer)
+
+#While loop kaart trekken (speler)
+while True:
+    # standaard begin spel
+    card = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    hand_computer = []
+    hand_speler = []
+
+    # eerste kaarten delen en tonen
+    for i in range(2):
+        hand_computer.append(rd.choice(card))
+        hand_speler.append(rd.choice(card))
+    print(f"Je hebt {hand_speler} en totaal {sum(hand_speler)}")
+    print(f"Computer heeft {hand_computer} en totaal {sum(hand_computer)}")
+
+    while True:#doorgaan spel
+        poging = str(input("Type Y for another card, type N to pass"))
+        if poging == "Y":
+            willekeur = rd.choice(card)
+            hand_speler.append(willekeur)
+            if 10 in hand_speler and len(hand_speler) > 2:
+                hand_speler.append(11)
+                hand_speler.remove(10)
+            elif sum(hand_speler) > 21:
+                computer()
+                controle()
+                break
+            print(f"Je hebt {hand_speler} en totaal {sum(hand_speler)}")
+        elif poging == "N":
+             computer()
+             controle()
+             break
+
