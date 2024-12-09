@@ -8,3 +8,13 @@ def draw_shape(num_sides):
 for shape_side_n in range(3,11):
     t.color(random.choice(colours))
     draw_shape(shape_side_n)
+
+colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "Light Pink", "Midnight Blue", "Gold","Silver"]
+directons = [0,90,180,270]
+t.pensize(15)
+t.speed("fastes")
+
+for _ in range(200):
+t.color(random.choise(colours))
+tim.forward(50)
+tim.setheading(random.choice(directions))
