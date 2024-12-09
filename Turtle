@@ -25,3 +25,29 @@ for _ in range(200):
 t.color(random.choise(colours))
 tim.forward(50)
 tim.setheading(random.choice(directions))
+
+#eigen oefening
+def lopen():
+    t.forward(rd.randint(1,200))
+
+def koers():
+    richting = rd.randint(1,2)
+    if richting == 1:
+        t.left(rd.randint(1, 360))
+    elif richting == 2:
+        t.right(rd.randint(1, 360))
+
+def color():
+    kleur = rd.choice(colours)
+    t.color(kleur)
+
+def dikte():
+    t.width(rd.randint(1,4))
+
+while True:
+    lopen()
+    koers()
+    dikte()
+    color()
+
+
