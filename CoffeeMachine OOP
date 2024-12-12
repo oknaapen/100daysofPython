@@ -13,6 +13,10 @@ class coffee_maker:
         self.total = 0
 
    def pay():
+         dubbeltje = int(input("dubbeltjes"))
+         kwartjes = int(input("kwartjes"))
+         50_cent = int(input("50 centjes"))
+         gulden = int(input("Guldens"))
 
 class menu:
     def __init__(self):
