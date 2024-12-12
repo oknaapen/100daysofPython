@@ -1,0 +1,31 @@
+class money_machine:
+    def __init__(self):
+        self.espresso = 2.0
+        self.latte = 2.5
+        self.cappuccino = 3.0
+        self.cash = 0
+
+    def report(self):
+        print(self.cash)
+         
+class coffee_maker:
+    def __init__(self):
+        self.total = 0
+
+   def pay():
+
+class menu:
+    def __init__(self):
+
+    def.get_items()
+
+
+######################################
+######################################
+
+coffee_maker.drink(Cappucino)
+  #Return niet genoeg
+  coffee_maker.pay(Capuccino)
+money_machine.report()
+coffee_maker.report()
+
