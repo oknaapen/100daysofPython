@@ -4,19 +4,32 @@ class money_machine:
         self.latte = 2.5
         self.cappuccino = 3.0
         self.cash = 0
+        self.total = 0
+
+    def pay():
+         dubbeltje = int(input("dubbeltjes"))
+         kwartjes = int(input("kwartjes"))
+         50_cent = int(input("50 centjes"))
+         gulden = int(input("Guldens"))
+         self.total += dubbeltje * 0.1 + kwartjes * 0.25 + 50_cent * 0.5 + gulden * 3
+         return self.total
 
     def report(self):
         print(self.cash)
          
 class coffee_maker:
     def __init__(self):
-        self.total = 0
+        self.milk = 300
+        self.coffee = 300
+        self.water = 300
 
-   def pay():
-         dubbeltje = int(input("dubbeltjes"))
-         kwartjes = int(input("kwartjes"))
-         50_cent = int(input("50 centjes"))
-         gulden = int(input("Guldens"))
+    def maker(drankje):
+        if drankje == 
+            self.milk
+        
+        
+
+   
 
 class menu:
     def __init__(self):
