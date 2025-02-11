@@ -1,6 +1,7 @@
-Ik ben bezig met een 100-daagse Python-bootcamp waarin bijna alle mogelijkheden van Python aan bod komen. Tijdens deze bootcamp heb ik al veel onderwerpen behandeld, waaronder Turtle, en nu ga ik aan de slag met een complex project in Pandas.
-De bootcamp is intensief en uitdagend, maar ik merk dat ik steeds beter word in Python. Als ik dit traject afrond, heb ik een diepgaande kennis van de taal en kan ik mezelf een advanced Python-gebruiker noemen. Ik kijk ernaar uit om mijn vaardigheden verder te ontwikkelen en steeds complexere projecten te bouwen!
+Ik ben bezig met een 100-daagse Python-bootcamp waarin bijna alle mogelijkheden van Python aan bod komen. Tot nu toe heb ik al verschillende uitdagende opdrachten voltooid, waaronder projecten met Turtle en andere geavanceerde concepten. Nu ga ik een complex project met Pandas doen, waarin ik nog dieper in data-analyse en -verwerking duik.
 
-I’m currently taking a 100-day Python bootcamp that covers almost all aspects of Python. So far, I’ve worked on various topics, including Turtle, and now I’m moving on to a complex project using Pandas.
-The bootcamp is intensive and challenging, but I can see myself improving every day. Once I complete this program, I will have an in-depth understanding of Python and can confidently call myself an advanced Python user. I’m excited to keep pushing my skills further and tackle even more complex projects!
+De bootcamp is intensief, maar ik zie duidelijk vooruitgang in mijn vaardigheden. Iedere dag leer ik iets nieuws, en als ik alles heb afgerond, zit ik tegen het expert-niveau aan.
 
+I’m currently taking a 100-day Python bootcamp that covers almost all aspects of Python. So far, I have completed several challenging exercises, including projects with Turtle and other advanced concepts. Now, I’m moving on to a complex project with Pandas, where I will dive even deeper into data analysis and processing.
+
+The bootcamp is intensive, but I can clearly see my progress. Every day, I learn something new, and once I have completed everything, I will be close to expert level.
