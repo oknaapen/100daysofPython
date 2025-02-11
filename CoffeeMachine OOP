@@ -1,48 +1,97 @@
-class money_machine:
-    def __init__(self):
-        self.espresso = 2.0
-        self.latte = 2.5
-        self.cappuccino = 3.0
-        self.cash = 0
-        self.total = 0
 
-    def pay():
-         dubbeltje = int(input("dubbeltjes"))
-         kwartjes = int(input("kwartjes"))
-         50_cent = int(input("50 centjes"))
-         gulden = int(input("Guldens"))
-         self.total += dubbeltje * 0.1 + kwartjes * 0.25 + 50_cent * 0.5 + gulden * 3
-         return self.total
+
+class Coffeemachine:
+    def __init__(self):
+        self.coffee_amount = 100
+        self.milk_amount = 300
+        self.water_amount = 300
+        self.cash = 0
+        self.espresso_cost = 1.5
+        self.capuccino_cost = 3.0
+        self.latte_cost = 2.0
+
+
+    def ingredient(drankje):
+        if drankje == "espresso":
+            if self.milk_amount <= 50:
+                print("niet genoeg water")
+                drankje = str(input("Wat wil je, espresso, capuccino, latte"))
+                ingredient(drankje)
+            elif self.coffee_amount <= 10:
+                print("niet genoeg coffee")
+                drankje = str(input("Wat wil je, espresso, capuccino, latte"))
+                ingredient(drankje)
+            if self.water_amount <= 250:
+                print("niet genoeg water")
+                drankje = str(input("Wat wil je, espresso, capuccino, latte"))
+                ingredient(drankje)
+            elif self.coffee_amount <= 24:
+                print("niet genoeg coffee")
+                drankje = str(input("Wat wil je, espresso, capuccino, latte"))
+                ingredient(drankje)
+            elif self.milk_amount <= 100:
+                print("niet genoeg milk")
+                drankje = str(input("Wat wil je, espresso, capuccino, latte"))
+                ingredient(drankje)
+            geld_controle(drankje)
+
+    def geld_controle(drankje):
+        total = 0
+        print("Please insert coins")
+        quarters = int(input("how many quarters"))
+        dimes = int(input("how many dimes"))
+        nickels = int(input("how many nickels"))
+        pennies = int(input("how many pennies"))
+        total += quarters * 0.25
+        total += dimes * 0.10
+        total += nickels * 0.05
+        total += pennies * 0.01
+
+        if drankje == "espresso" and total > self.espresso_cost:
+            self.retour = total - 1.5
+            voorraad(drankje)
+            totaal(drankje)
+            maak_drankje(retour)
+
+        elif drankje == "capuccino" and total > self.capuccino_cost:
+            self.retour= total - 3.0
+            voorraad(drankje)
+            totaal(drankje)
+            maak_drankje(retour)
+
+        elif drankje == "latte" and total > self.latte_cost:
+            retour = total - 2.5
+            voorraad(drankje)
+            totaal(drankje)
+            maak_drankje(retour)
+        else:
+            print(f"je hebt niet genoeg geld er in gestopt {total} krijg je terug")
+
+    def voorraad(drankje):
+        if drankje == "espresso":
+            self.water_amount -= 50
+            self.coffee_amount -= 18
+        elif drankje == "latte":
+            self.water_amount  -= 200
+            self.coffee_amount -= 24
+            self.milk_amount -= 150
+        elif drankje == "capuccino":
+            self.water_amount -= 250
+            self.coffee_amount -= 24
+            self.milk_amount -= 100
+        return self.water_amount, self.milk_amount, self.coffee_amount
 
     def report(self):
+        print(self.coffee_amount)
+        print(self.milk_amount)
+        print(self.water_amount)
         print(self.cash)
-         
-class coffee_maker:
-    def __init__(self):
-        self.milk = 300
-        self.coffee = 300
-        self.water = 300
 
-    def maker(drankje):
-        if drankje == 
-            self.milk
-        
-        
-
-   
-
-class menu:
-    def __init__(self):
-
-    def.get_items()
-
-
-######################################
-######################################
-
-coffee_maker.drink(Cappucino)
-  #Return niet genoeg
-  coffee_maker.pay(Capuccino)
-money_machine.report()
-coffee_maker.report()
-
+    def totaal(drankje):
+        if drankje == "espresso":
+            self.cash += 1.0
+        elif drankje == "capuccino":
+            self.cash += 3.0
+        elif drankje == "latte":
+            self.cash += 2.5
+        return lijst
